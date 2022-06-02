@@ -29,4 +29,8 @@ le nouveau composant. Similairement à AppComponent, FaceSnapComponent contient 
 Ici, une balise (le sélecteur) <app-face-snap></app-face-snap> dans app.component.html intégrera le face-snap.component.html
 On peut p.ex. mettre plusieurs fois la balise, ce qui affichera plusieurs fois le contenu de face-snap.component.html
 
-4) 
+4) Afficher donnees
+-------------------
+Des attributs sont crees en mettant le nom et type dans la classe; par défaut VSCode marque l'attribut car non initialisé. Pour garantir à
+TypeScript qu'on va initialiser, on peut ajouter 'un bang !'
+initialiser dans ngOnInit
