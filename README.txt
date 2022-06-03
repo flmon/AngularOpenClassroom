@@ -54,4 +54,6 @@ AppComponent utilise directement une ou plusieurs instances de FaceSnap
 7) Structure dynamique
 ----------------------
 Dans TypeScript (TS), on peut avoir des propriétés optionnelles dans la classe (avec un ?)
+On peut enlever constructeur pour moins de lourdeur => lors instanciation, il faut une autre syntaxe (sans le new)
+Dans le template (html), on met un élément conditionnel avec *ngIf
 
