@@ -42,3 +42,7 @@ On peut mettre un peu de style (dans fichiers .scss à différents niveaux)
 5) Evenements
 -------------
 creer methode dans le ts pour répondre à un événement et lier la (event binding)
+
+6) Propriétés personnalisées
+----------------------------
+creer repertoire models dans app puis un fichier .ts dedans => on cree une classe FaceSnap
