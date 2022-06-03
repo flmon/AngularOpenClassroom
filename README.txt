@@ -70,5 +70,9 @@ On peut ajouter des classes avec [ngClass]
 
 10) Pipes
 ---------
-le caractère pipe | s'applique à un string
+le caractère pipe | s'applique à un string p.ex. | titlecase pour mettre majuscules à 1ère lettre d'un mot
+ou | date pour formater date. On peut préciser le format avec :  --> | date : 'dd/MM/yy'
+Les dates apparaissent en anglais car la local par défaut est en-US; pour changer la locale, il faut changer dans
+app.module.ts  (providers)
+
 
