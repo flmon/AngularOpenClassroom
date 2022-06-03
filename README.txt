@@ -68,3 +68,7 @@ Exception: le fichier de styles principal styles.scss
 Dans le template, on peut avoir un style dynamique avec la directive [ngStyle]
 On peut ajouter des classes avec [ngClass]
 
+10) Pipes
+---------
+le caractère pipe | s'applique à un string
+
