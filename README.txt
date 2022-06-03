@@ -17,22 +17,22 @@ Lancement server dév: >ng serve --> on peut voir le résultat dans un navigateu
 
 2) Structure
 ------------
-L'index.html contient balise <app-root>, c-à-d la racine de l'app; Angular va remplacer la balise par le 'component' associé 
-(ici AppComponent). En fait, c'est app.component.ts qui déclare que app-root intégrera app.component.html
+L'index.html contient balise <app-root>, c-à-d la racine de l'app; Angular va remplacer la balise par le 'component'
+associé (ici AppComponent). En fait, c'est app.component.ts qui déclare que app-root intégrera app.component.html
 Dans app.component.ts, on peut définir un attribut (dans class AppComponent p.ex. title avec title = 'snapface';)
 
 3) Creer nouveau composant
 --------------------------
 CLI: > ng generate component face-snap 
-Va générer un sous-dossier face-snap correspondant au composant FaceSnapComponent; app.module.ts est mis à jour en déclarant 
-le nouveau composant. Similairement à AppComponent, FaceSnapComponent contient un décorateur (@Component) décrivant le comportement.
+Va générer un sous-dossier face-snap correspondant au composant FaceSnapComponent; app.module.ts est mis à jour en
+déclarant le nouveau composant. Similairement à AppComponent, FaceSnapComponent contient un décorateur (@Component) décrivant le comportement.
 Ici, une balise (le sélecteur) <app-face-snap></app-face-snap> dans app.component.html intégrera le face-snap.component.html
 On peut p.ex. mettre plusieurs fois la balise, ce qui affichera plusieurs fois le contenu de face-snap.component.html
 
 4) Afficher donnees
 -------------------
-Des attributs sont crees en mettant le nom et type dans la classe; par défaut VSCode marque l'attribut car non initialisé. Pour garantir à
-TypeScript qu'on va initialiser, on peut ajouter 'un bang !'
+Des attributs sont crees en mettant le nom et type dans la classe; par défaut VSCode marque l'attribut car non initialisé.
+Pour garantir à TypeScript qu'on va initialiser, on peut ajouter 'un bang !'
 initialiser dans ngOnInit
 Dans le html, on peut faire de la 'string interpolation' avec doubles accolades (p.ex {{title}} )
 Autre possibilité: 'attribute binding' utiliser plutôt syntaxe avec []
@@ -60,4 +60,11 @@ Dans le template (html), on met un élément conditionnel avec *ngIf
 8) Listes
 ---------
 Dans le template, parcours d'un ensemble avec *ngFor
+
+9) Style dynamique
+------------------
+Les styles sont définis dans les fichiers .scss; il n'y a pas d'héritage. Un style dans un parent n'est pas vu par l'enfant.
+Exception: le fichier de styles principal styles.scss
+Dans le template, on peut avoir un style dynamique avec la directive [ngStyle]
+On peut ajouter des classes avec [ngClass]
 
