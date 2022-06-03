@@ -38,3 +38,7 @@ Dans le html, on peut faire de la 'string interpolation' avec doubles accolades 
 Autre possibilité: 'attribute binding' utiliser plutôt syntaxe avec []
 donc plutôt <img [src]="imageUrl" [alt]="title"> que <img src="{{ imageUrl }}" alt="{{ title }}">
 On peut mettre un peu de style (dans fichiers .scss à différents niveaux)
+
+5) Evenements
+-------------
+creer methode dans le ts pour répondre à un événement et lier la (event binding)
