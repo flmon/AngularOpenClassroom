@@ -46,3 +46,8 @@ creer methode dans le ts pour répondre à un événement et lier la (event bind
 6) Propriétés personnalisées
 ----------------------------
 creer repertoire models dans app puis un fichier .ts dedans => on cree une classe FaceSnap
+On peut simplifier la classe (raccourci TypeScript) en mettant public dans le constructeur ce qui
+permet de retirer déclarations/initialisations.
+FaceSnapComponent utilise alors l'objet FaceSnap (avec un décorateur @Input) et ne gère plus que l'event
+AppComponent utilise directement une ou plusieurs instances de FaceSnap
+
