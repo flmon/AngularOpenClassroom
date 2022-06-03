@@ -51,3 +51,7 @@ permet de retirer déclarations/initialisations.
 FaceSnapComponent utilise alors l'objet FaceSnap (avec un décorateur @Input) et ne gère plus que l'event
 AppComponent utilise directement une ou plusieurs instances de FaceSnap
 
+7) Structure dynamique
+----------------------
+Dans TypeScript (TS), on peut avoir des propriétés optionnelles dans la classe (avec un ?)
+
