@@ -34,3 +34,6 @@ On peut p.ex. mettre plusieurs fois la balise, ce qui affichera plusieurs fois l
 Des attributs sont crees en mettant le nom et type dans la classe; par défaut VSCode marque l'attribut car non initialisé. Pour garantir à
 TypeScript qu'on va initialiser, on peut ajouter 'un bang !'
 initialiser dans ngOnInit
+Dans le html, on peut faire de la 'string interpolation' avec doubles accolades (p.ex {{title}} )
+Autre possibilité: 'attribute binding' utiliser plutôt syntaxe avec []
+donc plutôt <img [src]="imageUrl" [alt]="title"> que <img src="{{ imageUrl }}" alt="{{ title }}">
