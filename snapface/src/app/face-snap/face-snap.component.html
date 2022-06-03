@@ -8,20 +8,6 @@
         <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }">🤌 {{ faceSnap.snaps }}</span>
     </p>
     <p *ngIf="faceSnap.location">Photo prise à {{ faceSnap.location }}</p>
-    <p *ngIf="faceSnap.location === 'Paris'">A Paris !</p>
-    <p>{{ 4346234.36 }}</p>
-    <p>{{ 4346234.36 | number }}</p>
-    <p>{{ 4346234.36 | number: '1.0-0' }}</p>
 
-    <! arrondi 1 chiffre -->
-        <p>{{ 4346234.36 | number: '1.0-1' }}</p>
-
-        <! affiche 34% -->
-            <p>{{ 0.336 | percent }}</p>
-            <p>{{ 0.336 | percent: '1.0-1' }}</p>
-
-            <p>{{ 344.36 | currency }}</p>
-            <p>{{ 344.36 | currency: 'EUR' }}</p>
-            <p>{{ 344.36 | currency: 'EUR' : 'code' }}</p>
 
 </div>

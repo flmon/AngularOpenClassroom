@@ -7,7 +7,6 @@ Install Node.js (nodejs.org) et npm
 Install Angular CLI (shell--> npm i -g @angular/cli)  (i --> install et -g --> global)
 Vérif install : ng v 
 
-
 1) Creation projet Angular avec le CLI
 --------------------------------------
 Creer dossier pour le projet puis aller dans ce dossier
@@ -75,5 +74,10 @@ ou | date pour formater date. On peut préciser le format avec :  --> | date : '
 Les dates apparaissent en anglais car la local par défaut est en-US; pour changer la locale, il faut changer dans
 app.module.ts  (providers).
 On peut appliquer un pipe de formatage pour les nombres.
+
+11) Services
+------------
+Réorg de l'app (component face-snap-list) puis creer dossiers services (dans app) puis fichier face-snaps.service.ts dedans.
+Un service est une classe que l'on va 'décorer' avec @Injectable(). Il n'y a pas de ngOnInit() dans un service.
 
 
