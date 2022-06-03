@@ -45,7 +45,7 @@ creer methode dans le ts pour répondre à un événement et lier la (event bind
 6) Propriétés personnalisées
 ----------------------------
 creer repertoire models dans app puis un fichier .ts dedans => on cree une classe FaceSnap
-On peut simplifier la classe (raccourci TypeScript) en mettant public dans le constructeur ce qui
+On peut simplifier la classe (raccourci TypeScript) en mettant public/private dans le constructeur ce qui
 permet de retirer déclarations/initialisations.
 FaceSnapComponent utilise alors l'objet FaceSnap (avec un décorateur @Input) et ne gère plus que l'event
 AppComponent utilise directement une ou plusieurs instances de FaceSnap
@@ -79,5 +79,7 @@ On peut appliquer un pipe de formatage pour les nombres.
 ------------
 Réorg de l'app (component face-snap-list) puis creer dossiers services (dans app) puis fichier face-snaps.service.ts dedans.
 Un service est une classe que l'on va 'décorer' avec @Injectable(). Il n'y a pas de ngOnInit() dans un service.
+Dans le service, on peut ajouter constructeur avec argument avec modificateur d'accès, ce qui crée la propriété.
+Le modificateur doit être public ou plutôt private (pour empêcher accès direct)
 
 
