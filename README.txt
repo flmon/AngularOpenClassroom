@@ -90,6 +90,6 @@ Dans le dossier app, creer fichier app-routing.module.ts et declarer classe pour
 doit également être importée dans app.module.ts; de plus dans template d'AppComponent, changer <app-face-snap-list> par
 <router-outlet>
 Creation composant landing-page qui correspondra à la route 'vide'; utiliser routerLink pour aller sur une route enregistrée.
-
+Ajouter menu de navigation dans HeaderComponent
 
 
