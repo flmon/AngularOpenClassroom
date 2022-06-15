@@ -81,7 +81,7 @@ Réorg de l'app (component face-snap-list) puis creer dossiers services (dans ap
 Un service est une classe que l'on va 'décorer' avec @Injectable(). Il n'y a pas de ngOnInit() dans un service.
 Dans le service, on peut ajouter constructeur avec argument avec modificateur d'accès, ce qui crée la propriété.
 Le modificateur doit être public ou plutôt private (pour empêcher accès direct)
-Une méthode peut prendre (comme paramètre) un 'literal type' pour éviter de pouvoir utiliser n'import quelle string
+Une méthode peut prendre (comme paramètre) un 'literal type' pour éviter de pouvoir utiliser n'importe quelle string
 (en fait pas limité aux string)
 
 12) Single Page Applications (SPA) et routing
@@ -89,5 +89,7 @@ Une méthode peut prendre (comme paramètre) un 'literal type' pour éviter de p
 Dans le dossier app, creer fichier app-routing.module.ts et declarer classe pour routing (voir code). Cette classe
 doit également être importée dans app.module.ts; de plus dans template d'AppComponent, changer <app-face-snap-list> par
 <router-outlet>
+Creation composant landing-page qui correspondra à la route 'vide'; utiliser routerLink pour aller sur une route enregistrée.
+
 
 
