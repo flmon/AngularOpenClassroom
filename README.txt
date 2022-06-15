@@ -91,5 +91,7 @@ doit également être importée dans app.module.ts; de plus dans template d'AppC
 <router-outlet>
 Creation composant landing-page qui correspondra à la route 'vide'; utiliser routerLink pour aller sur une route enregistrée.
 Ajouter menu de navigation dans HeaderComponent
+Transformer lien sur landing page en bouton
+Creer nouveau composant SingleFaceSnapComponent ainsi qu'une route d'un snap spécifique
 
 
