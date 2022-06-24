@@ -99,5 +99,8 @@ Creer nouveau composant SingleFaceSnapComponent ainsi qu'une route d'un snap sp�
 Dans app.component.ts, utiliser la méthod interval (de rxjs) qui crée un Observable qui émet des nombres croissants.
 On peut appliquer des opérateurs à un Observable (avec pipe). L'opérateur map transforme les émissions (p.ex.
 multiplication par 10). Comme autres opérateurs 'bas-niveau', il y a filter, tap.
+Il y a aussi des opérateurs 'haut-niveau': xxxMap (p.ex. switchMap). Un Observable haut-niveau est un observable
+qui souscrit à d'autres Observables. L'Observable qui souscrit est appelé Observable extérieur et ceux qui sont souscrits
+sont les Observables intérieurs.
 
 
