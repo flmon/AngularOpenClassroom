@@ -94,4 +94,8 @@ Ajouter menu de navigation dans HeaderComponent
 Transformer lien sur landing page en bouton
 Creer nouveau composant SingleFaceSnapComponent ainsi qu'une route d'un snap spécifique
 
+13) Observables - RxJS
+----------------------
+Dans app.component.ts, utiliser la méthod interval (de rxjs) qui crée un Observable qui émet des nombres croissants.
+
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FaceSnap } from './models/face-snap.model';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,15 @@ import { FaceSnap } from './models/face-snap.model';
 export class AppComponent {
 
   ngOnInit() {
+    const interval$ = interval(1000);
+
+    interval$.subscribe(value => console.log(value));
+
+    setTimeout(() => {
+      interval$.subscribe(value => console.log(value));
+    }, 3000);
+
   }
+
+
 }
