@@ -103,4 +103,12 @@ Il y a aussi des opérateurs 'haut-niveau': xxxMap (p.ex. switchMap). Un Observa
 qui souscrit à d'autres Observables. L'Observable qui souscrit est appelé Observable extérieur et ceux qui sont souscrits
 sont les Observables intérieurs.
 
+14) Fuites de mémoires Observables
+----------------------------------
+voir code
+On peut éviter fuites si p.ex. on sait combien d'émissions d'observable on veut avec take
+==> 3 émissions : take(3)
+On peut aussi détruire avec ngOnDestroy qui sera appelé à la destruction du composant.
+Creer un Subject (un Observable que l'on peut faire émettre à la demande)
+
 
