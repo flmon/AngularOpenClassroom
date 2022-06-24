@@ -111,4 +111,9 @@ On peut éviter fuites si p.ex. on sait combien d'émissions d'observable on veu
 On peut aussi détruire avec ngOnDestroy qui sera appelé à la destruction du composant.
 Creer un Subject (un Observable que l'on peut faire émettre à la demande)
 
+15) Formulaires
+---------------
+En Angular, il y a 2 méthodes pour creer formulaires: 'template' ou 'réactive'
+Formulaire template: ajouter FormsModule aux imports de AppModule
+
 
