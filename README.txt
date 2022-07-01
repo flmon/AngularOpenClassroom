@@ -128,6 +128,12 @@ voir code
 
 17) Requêtes serveur
 --------------------
-Clonez un backend
+Clonez un backend (angular-intermediate-backend). Une fois cloné, dans le dossier du backend, faites  npm install  ,
+puis  npm run start  . Vous devriez voir quelque chose comme : 'Loading db.json'; le backend de développement tourne
+sur http://localhost:3000 !
+Pour vérifier que le backend fonctionne, vous pouvez visiter http://localhost:3000/facesnaps –
+vous devriez voir le JSON des FaceSnaps retournés par le backend.
+Importer HttpClientModule depuis AppModule.
+Injectez HttpClient dans FaceSnapsService en y créant un constructor, comme pour les components.
 
 

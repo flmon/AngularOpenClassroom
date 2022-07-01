@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.model';
 
@@ -5,6 +6,11 @@ import { FaceSnap } from '../models/face-snap.model';
     providedIn: 'root'
 })
 export class FaceSnapsService {
+
+    constructor(private http: HttpClient) { }
+
+    // ...
+
     faceSnaps: FaceSnap[] = [
         {
             id: 1,
