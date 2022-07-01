@@ -120,6 +120,10 @@ Ajouter une route pour ce composant. Creer un bouton dans HeaderComponent pour c
 contiendra le formulaire FormGroup (et non pas NgForm - form template-). Injecter un FormBuilder pour simplifier la
 génération de formulaires. Dans ngOnInit(), utiliser le FormBuilder avec la méthode group. Dans le template, lier formulaire
 (formGroup) au snapForm.
-Pour avoir aperçu du côté 'réactif', afficher en temps réeé le FaceSnap => creer Observable
+Pour avoir aperçu du côté 'réactif', afficher en temps réel le FaceSnap => creer Observable
+
+16) Validation
+--------------
+
 
 
