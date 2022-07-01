@@ -96,7 +96,7 @@ Creer nouveau composant SingleFaceSnapComponent ainsi qu'une route d'un snap sp�
 
 13) Observables - RxJS
 ----------------------
-Dans app.component.ts, utiliser la méthod interval (de rxjs) qui crée un Observable qui émet des nombres croissants.
+Dans app.component.ts, utiliser la méthode interval (de rxjs) qui crée un Observable qui émet des nombres croissants.
 On peut appliquer des opérateurs à un Observable (avec pipe). L'opérateur map transforme les émissions (p.ex.
 multiplication par 10). Comme autres opérateurs 'bas-niveau', il y a filter, tap.
 Il y a aussi des opérateurs 'haut-niveau': xxxMap (p.ex. switchMap). Un Observable haut-niveau est un observable
@@ -115,5 +115,11 @@ Creer un Subject (un Observable que l'on peut faire émettre à la demande)
 ---------------
 En Angular, il y a 2 méthodes pour creer formulaires: 'template' ou 'réactive'
 Formulaire template: ajouter FormsModule aux imports de AppModule
+Formulaire réactif: sont générés en TypeScript; ajouter ReactiveFormsModule (à AppModule). Creer nouveau composant new-face-snap.
+Ajouter une route pour ce composant. Creer un bouton dans HeaderComponent pour creer ces nouveaux snaps. Le NewFaceSnapComponent
+contiendra le formulaire FormGroup (et non pas NgForm - form template-). Injecter un FormBuilder pour simplifier la
+génération de formulaires. Dans ngOnInit(), utiliser le FormBuilder avec la méthode group. Dans le template, lier formulaire
+(formGroup) au snapForm.
+
 
 
