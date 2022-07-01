@@ -124,6 +124,10 @@ Pour avoir aperçu du côté 'réactif', afficher en temps réel le FaceSnap => 
 
 16) Validation
 --------------
+voir code
 
+17) Requêtes vers serveur
+-------------------------
+Clonez un backend (angular-intermediate-backend)
 
 
