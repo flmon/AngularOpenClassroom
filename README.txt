@@ -143,5 +143,6 @@ Modifier SingleFaceSnapComponent en ajoutant un Observable de FaceSnap.
 18) Requêtes composées
 ----------------------
 Il faut modifier onSnap() dans SingleFaceSnapComponent.
+Modif pour creer nouveaux FaceSnap. Modifier onSubmitForm() de NewFaceSnapComponent.
 
 
