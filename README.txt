@@ -140,4 +140,8 @@ Modifier le service (getAllFaceSnaps) pour retourner non pas un tableau de FaceS
 en utilisant le get de HttpClient.
 Modifier SingleFaceSnapComponent en ajoutant un Observable de FaceSnap.
 
+18) Requêtes composées
+----------------------
+Il faut modifier onSnap() dans SingleFaceSnapComponent.
+
 
