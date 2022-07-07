@@ -136,5 +136,8 @@ vous devriez voir le JSON des FaceSnaps retournés par le backend.
 Importer HttpClientModule depuis AppModule.
 Injectez HttpClient dans FaceSnapsService en y créant un constructor, comme pour les components.
 Dans FaceSnapListComponent, modifier pour utiliser un Observable qui émet le tableau de FaceSnap.
+Modifier le service (getAllFaceSnaps) pour retourner non pas un tableau de FaceSnap mais un Observable<FaceSnap[]>
+en utilisant le get de HttpClient.
+Modifier SingleFaceSnapComponent en ajoutant un Observable de FaceSnap.
 
 
