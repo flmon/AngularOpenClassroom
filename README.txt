@@ -145,4 +145,10 @@ Modifier SingleFaceSnapComponent en ajoutant un Observable de FaceSnap.
 Il faut modifier onSnap() dans SingleFaceSnapComponent.
 Modif pour creer nouveaux FaceSnap. Modifier onSubmitForm() de NewFaceSnapComponent.
 
+19) Sécurisation des requêtes
+-----------------------------
+Utilisation d'intercepteurs qui interceptent toutes les requêtes envoyées. Un intercepteur est une classe qui
+implémente HttpInterceptor avec le décorateur @Injectable. Creer un dossier interceptors et un fichier auth.interceptor.ts
+dedans. Creer un service auth.service.ts dans dossier services.
+
 
